@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../../../Downloads/project"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "FE-Prof"
+	}
+}

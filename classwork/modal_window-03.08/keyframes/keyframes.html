@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pulsation/Ball</title>
+    <style>
+      /* Pulsation
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.3);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .element {
+            width: 50px;
+            height: 50px;
+            background-color: green;
+            animation: pulse 2s infinite;
+        } */
+
+      /* Drop a ball */
+      .element {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: red;
+        position: relative;
+        animation: bounce 3s infinite;
+      }
+      .element::before {
+        content: "";
+        background-color: white;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        border-radius: 50%;
+      }
+
+      @keyframes bounce {
+        0%,
+        50%,
+        100% {
+          transform: translateY(100px);
+        }
+        25% {
+          transform: translateY(-50px);
+        }
+        75% {
+          transform: translateY(50px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="element"></div>
+  </body>
+</html>

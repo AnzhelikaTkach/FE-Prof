@@ -1,0 +1,16 @@
+// DRY - dont repeat yourself
+
+// @mixin border-radius($value, $clr: yellow) {
+//   border-radius: $value;
+//   -webkit-border-radius: $value;
+//   -moz-border-radius: $value;
+//   -ms-border-radius: $value;
+//   color: $clr;
+// }
+
+@mixin flex($justify-content: normal, $align-items: normal, $gap: 0) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  gap: $gap;
+}

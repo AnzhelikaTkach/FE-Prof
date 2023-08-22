@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- <style>
+      .slide {
+        display: none;
+      }
+      .slide.show {
+        display: block;
+      }
+    </style> -->
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- <div class="slider">
+      <div class="slide">Slide 1: Welcome to our website!</div>
+      <div class="slide">Slide 2: About us!</div>
+      <div class="slide">Slide 3: Contact us!</div>
+    </div>
+    <button class="prev">Prev</button>
+    <button class="next">Next</button> -->
+
+    <!-- <script>
+      const slides = document.querySelectorAll(".slide");
+      const prev = document.querySelector(".prev");
+      const next = document.querySelector(".next");
+
+      let slideIndex = 0;
+      slides[slideIndex].classList.add("show");
+
+      prev.onclick = () => {
+        slides[slideIndex].classList.remove("show");
+        slideIndex--;
+        if(slideIndex < 0) slideIndex = slides.length - 1; 
+        slides[slideIndex].classList.add("show");
+      };
+
+      next.onclick = () => {
+        slides[slideIndex].classList.remove("show");
+        slideIndex++;
+        if(slideIndex >= slides.length) slideIndex = 0; 
+        slides[slideIndex].classList.add("show");
+      };
+    </script> -->
+
+    <script src="./script.js"></script>
+  </body>
+</html>

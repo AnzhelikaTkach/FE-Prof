@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="product-form">
+      <input
+        type="text"
+        id="name"
+        placeholder="Название товара"
+        min="0"
+        required
+      />
+      <input type="number" id="price" placeholder="Цена товара" required />
+
+      <input type="number" id="count" placeholder="Количество" required>
+
+      <button>Добавить</button>
+
+      <select id="sort">
+        <option value="">Выберите сортировку</option>
+        <option value="price-up">Цена(по возрaстанию)</option>
+        <option value="price-down">Цена(по убыванию)</option>
+        <option value="count-up">Количество(по возрaстанию)</option>
+        <option value="count-down">Количество(по убыванию)</option>
+      </select>
+    </form>
+
+    <input type="text" id="search" placeholder="Поиск...">
+
+    <ul id="product-list"></ul>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

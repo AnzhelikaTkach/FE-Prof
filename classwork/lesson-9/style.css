@@ -1,0 +1,123 @@
+.item {
+    padding: 10px;
+    border: 1px solid red;
+
+}
+/* bootstrap, tailwind */
+/* grid-template-columns */
+/* grid-template-rows */
+/* fr */
+/* grid-template: rows / columns*/
+/* gap */
+
+
+/* Количество дочерних элементов - 10
+Колонки - 3 по 100px
+Строки - по 200px
+Отступы между колонками - 20px
+Отступы между строк - 10px */
+
+/* grid-template-columns: 100px 1fr 2fr;
+    grid-template-rows: repeat(2, 200px) ; */
+/* .items {
+    display: grid;
+    grid-template: repeat(4, 200px ) / repeat(3, 100px);
+    row-gap: 10px;
+    column-gap: 20px;
+} 
+
+ grid-column-start: 
+    grid-column-end:
+    span
+    grid-column: start / end 
+
+ .item:first-child { 
+    grid-column-start: 2;
+    grid-column-end: 4; 
+    grid-column: 2 / 4; 
+    grid-column: 2 / span 2;
+}
+
+.item:nth-child(7){
+    grid-column: 1 / 2;
+    grid-row: 1 / span 2;
+} */
+
+
+
+
+/* exersice2 */
+.items {
+    display: grid;
+    grid-template: repeat(2, 200px) / repeat(4, 200px); 
+    row-gap: 10px;
+    column-gap: 20px;
+    justify-content: center;
+} 
+
+
+
+/* .item:nth-child(4) {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+.item:nth-child(5) {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+}
+.item:nth-child(6) {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+} */
+
+
+/* .item:first-child{
+    grid-column: 1 / span 2;
+}
+
+.item:nth-child(2) {
+    grid-column: 3 / span 2;
+}
+
+.item:nth-child(4) {
+    grid-column: 2 / span 3;
+}
+
+.item:nth-child(5) {
+    grid-column: 1 / span 4;
+} */
+
+.item:first-child{
+    grid-column: 1 / span 2;
+}
+
+.item:nth-child(2) {
+    grid-column: 3 / span 2;
+}
+
+.item:nth-child(3) {
+    grid-column: 1 / span 2;
+}
+
+.item:nth-child(4) {
+    display: grid;
+    grid-column: 3 / span 2;
+    grid-template:  repeat(2, auto) / repeat (2, 1fr);
+    gap: 4px;
+}
+
+.item1{
+    padding: 10px;
+    border: 1px solid red;
+}
+
+.item1:first-child {
+    grid-column: 1 / span 2;
+}
+.item1:nth-child(2) {
+    grid-column: 1 / span 1;
+}
+.item1:nth-child(3) {
+    grid-column: 2 / span 1;
+}
+

@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  padding: 20px;
+}
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: normal;
+  gap: 20px;
+}
+.header__menu-home {
+  text-decoration: none;
+  color: rgb(5, 117, 79);
+  font-size: 30px;
+}/*# sourceMappingURL=style.css.map */

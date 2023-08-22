@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", "sans-serif";
+  background-color: #040c18;
+}
+
+p {
+  color: #81afdd;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+}
+a:hover {
+  opacity: 0.6;
+}
+
+ul {
+  display: flex;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.btn {
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+}
+.btn.btn-orange {
+  background-color: #ff4820;
+  border-radius: 5px;
+}
+.btn.btn-black {
+  background-color: #000;
+  border-radius: 40px;
+}
+.btn.btn-tr {
+  background-color: transparent;
+}
+
+.container {
+  margin: 0 auto;
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px !important;
+  }
+}
+@media (min-width: 990px) and (max-width: 1199px) {
+  .container {
+    max-width: 992px !important;
+  }
+}
+@media (max-width: 989px) {
+  .container {
+    max-width: 800px !important;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 580px !important;
+  }
+}
+@media (max-width: 575px) {
+  .container {
+    width: 100% !important;
+    padding: 15px;
+  }
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+header .nav-burger {
+  display: none;
+}
+header .nav-burger img {
+  width: 30px;
+}
+@media (max-width: 989px) {
+  header .nav-burger {
+    display: block;
+  }
+}
+@media (max-width: 989px) {
+  header .nav-menu {
+    display: none;
+  }
+}
+header .nav-menu ul {
+  gap: 30px;
+}
+@media (max-width: 989px) {
+  header .nav-menu ul {
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 30px;
+    background-color: #042c54;
+    padding: 25px;
+    gap: 6px;
+  }
+}
+
+.show {
+  display: block !important;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 989px) {
+  .main-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+@media (max-width: 989px) {
+  .main-content__text {
+    order: 2;
+  }
+}
+.main-content__text .gradient-heading {
+  background: linear-gradient(90deg, rgb(174, 103, 250), rgb(244, 152, 103));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 75px;
+  letter-spacing: -2.48px;
+  width: 612px;
+  margin-top: 100px;
+  margin-bottom: 33px;
+}
+@media (max-width: 989px) {
+  .main-content__text .gradient-heading {
+    font-size: 42px;
+  }
+}
+@media (max-width: 768px) {
+  .main-content__text .gradient-heading {
+    font-size: 35px;
+  }
+}
+.main-content__text .text-p {
+  font-size: 20px;
+  width: 97%;
+  margin: 20px 0;
+}
+.main-content__text form {
+  margin-top: 33px;
+  margin-bottom: 37px;
+  display: flex;
+}
+.main-content__text form input {
+  background-color: #052d56;
+  border: none;
+  outline: none;
+  color: #3d6184;
+  padding: 18px;
+  border-radius: 5px 0 0 5px;
+  width: 70%;
+}
+.main-content__text form .btn {
+  border-radius: 0 5px 5px 0;
+}
+.main-content__text .people {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.main-content__text .people-text p {
+  font-size: 12px;
+  color: #fff;
+}
+.main-content__img img {
+  width: 100%;
+}
+
+.companies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 80px 0;
+}
+.companies-logo {
+  display: flex;
+  gap: 46px;
+}
+@media (max-width: 989px) {
+  .companies-logo {
+    flex-direction: column;
+  }
+}
+
+.explanation .gradient-heading {
+  background: linear-gradient(90deg, rgb(174, 103, 250), rgb(244, 152, 103));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 45px;
+  letter-spacing: -2.48px;
+  width: 612px;
+  margin-top: 100px;
+  margin-bottom: 33px;
+}
+@media (max-width: 989px) {
+  .explanation .gradient-heading {
+    font-size: 42px;
+  }
+}
+@media (max-width: 768px) {
+  .explanation .gradient-heading {
+    font-size: 35px;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form id="product-form">
+        <input type="text" id="name" placeholder="Product Name" required>
+        <input type="number" id="price" placeholder=""Product price required>
+        <button>Add</button>
+    </form>
+    <ul id="product-list"></ul> -->
+    <!-- // Задача: Создание интерактивной библиотеки книг
+// Подзадачи:
+// 1.	HTML структура. Создать HTML-форму с полями для ввода информации о книге: название, автор, год издания и количество страниц. Добавить кнопку для отправки формы.
+// 2.	Отображение книг. Написать функцию JavaScript, которая будет создавать элемент списка для каждой книги и добавлять его в список на странице.
+// 3.	Добавление книг. Добавить обработчик событий для формы, который будет считывать информацию из полей ввода и добавлять новую книгу в список.
+// 4.	Поиск книг. Добавить поле для поиска и написать функцию, которая будет фильтровать книги(по названию) в списке по введенному тексту.
+// 5.	Сортировка книг. Добавить элемент select для выбора сортировки. Написать функцию, которая будет сортировать книги в списке в зависимости от выбранного варианта. (варианты придумайте сами).
+// 6.	Хранение книг. Использовать localStorage для сохранения книг между сессиями браузера. Должны сохраняться все книги. -->
+<form id="library-form">
+    <input type="text" id="name" placeholder="Автор" min="0" required />
+    <input type="text" id="book" placeholder="Название книги" min="0" required />
+    <input type="number" id="year" placeholder="Год выпуска" required />
+    <input type="number" id="pages" placeholder="Количество страниц" required />
+
+    <button>Добавить</button>
+  </form>
+  <select id="sort">
+    <option value="">Сортировать по...</option>
+    <option value="autor-a-z">По имени автора (a-z)</option>
+    <option value="autor-z-a">По имени автора (z-a)</option>
+    <option value="book-a-z">Название (a-z)</option>
+    <option value="book-z-a">Название (z-a)</option>
+    <option value="year-up">Год выпуска</option>
+    <option value="year-down">Год выпуска (по уб)</option>
+  </select>
+  <input type="text" id="search" placeholder="Поиск..." />
+
+  <button id="clean-all" class="lightbtn">clean</button>
+  <ul id="library-list"></ul>
+
+    <script src="./script.js"></script>
+</body>
+</html>

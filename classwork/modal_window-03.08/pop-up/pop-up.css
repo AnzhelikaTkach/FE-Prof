@@ -1,0 +1,89 @@
+/* keyframes - правила css. позволяет создовать анимацию создавая различные стили для элемента в разные моменты времени во время анимаций. С помощью него мы делим анимацию на кадры и говорим на каждом кадре какие стили должны поменяться. После создания они передаются элементу. каждой анимации даем имя(keyframes). Далее выбраем селекторы ключивых кадров. Есть 2 вида селекторов. Первый набор селекторов - с ключевыми названиями "from" & "to" - это состояния. Усли у нас множество анимаций, используються проценты - % (0% & 100% обязательно)
+@keyframes название {
+    from {
+        top: 0;
+        абсолютно все стили можно менять.
+    }
+    to {
+        top: 200px;
+    }
+
+    div {
+       position: relative;
+      border: 1px solid black;
+     width: 100px;
+     height: 100px;
+     animation: название, длительность, timing function(ф-я синчронизации - ease..., как transition), чтобы работала постоянно - infinite;
+}
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.product-card {
+  width: 300px;
+  border: 1px solid #aaa;
+  padding: 15px;
+  margin: 50px;
+  text-align: center;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+}
+
+@keyframes open {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes close {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.popup.open {
+  animation: open 0.3s forwards;
+}
+
+.popup.close {
+  animation: close 0.3 forwards;
+}
+
+
+.popup-content {
+    background-color: white;
+    width: 70%;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid rgb(184, 179, 179);
+}
+
+.closeBtn {
+    float: right;
+    color: #aaa;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.closeBtn:hover {
+    color: black;
+}

@@ -1,0 +1,22 @@
+.explanation {
+
+    // grid-template-columns: 1fr 2fr;
+        .gradient-heading {
+      background: $gradient;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      font-size: 34px;
+      font-weight: 800;
+      line-height: 45px;
+      letter-spacing: -2.48px;
+      width: 612px;
+      margin-top: 100px;
+      margin-bottom: 33px;
+      @include medium-screen {
+        font-size: 42px;
+      }
+      @include small-screen {
+        font-size: 35px;
+      }
+    }
+}
